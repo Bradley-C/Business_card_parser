@@ -1,7 +1,7 @@
 import time
 from Card_Parser import BusinessCardParser #Allows use of class and any of its functions 
 
-start_time = time.time() #Start timer to test run time
+start_time = time.time() #Start timer for run time
 
 #Different tests to pass to parser (more tests can be added)
 test1 = \
@@ -54,10 +54,10 @@ Klosk.B32@Inves.org"""
 
 testBench = [test1, test2, test3, test4, test5] #List of tests created above (new tests must be added here as well) 
 for i in range(0,len(testBench)): #Loop for amount of tests in testBench
-    t=testBench[i] #Set t equal to next test string
+    t = testBench[i] #Set t equal to next test string
     Output = BusinessCardParser.getContactInfo(t) #Pass test string to parsing file to create string of name, phone number, and email
 
-    #Print the input string as well as the results
+    #Print the input string as well as the results to compare
     print ("INPUT #",i+1)
     print (t)
     print ("")

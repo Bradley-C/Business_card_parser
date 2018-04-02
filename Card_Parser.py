@@ -23,7 +23,7 @@ class ContactInfo:
         Filename = "CSV_Database_of_First&Middle_Names.csv"
         Filename2 = "CSV_Database_of_Last_Names.csv"
 
-        #Regular experssions used to identify 3 or 2 words with only letters each seperated by a space
+        #Regular experssions used to identify 3 or 2 words with only letters each seperated by a space (can contain periods as well)
         NameKey = "[a-zA-Z\-.]{2,} [a-zA-Z\-.]{2,} [a-zA-ZA\-.]{2,}"
         NameKey2 = "[a-zA-Z\-.]{2,} [a-zA-ZA\-.]{2,}"
         
